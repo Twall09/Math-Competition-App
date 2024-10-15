@@ -1,0 +1,31 @@
+<!-- The header ejs template is included to ensure our CSS and fonts are loaded -->
+<%- include('partials/header') %>
+
+<link rel="stylesheet" type="text/css" href="./leaderboards.css" />
+
+<!-- Designed a table for creativity -->
+
+<center><h1>Leaderboard:</h1></center>
+<div class="leaderboardsPage">
+    <table>
+        <thead>
+            <tr>
+                
+                <th>Streak</th>
+                <th>Date Obtained</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% leaderboard.forEach(({streak, date}, index) => { %>
+                <tr>
+                    
+                    <td><%= streak %></td>
+                    <td><%= date %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+    <a href="/" class="button">Home</a>
+</div>
+</body>
+</html>

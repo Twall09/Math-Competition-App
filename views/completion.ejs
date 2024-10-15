@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+
+<link rel="stylesheet" type="text/css" href="./completion.css" />
+
+<center><h1>Quiz Completed!</h1></center>
+
+<div class="complete-page">
+  <p>
+    QUIZ COMPLETE!
+    <b>*If wrong, check the terminal for the correct answer!*</b>
+  </p>
+  <p>Your current streak: <%= streak %></p>
+
+  <p>Try another quiz or return home:</p>
+
+  <a href="/quiz"
+    ><center><button class="button">Try Again</button></center></a
+  >
+  <a href="/"
+    ><center><button class="button">Home</button></center></a
+  >
+</div>
