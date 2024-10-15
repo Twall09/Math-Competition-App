@@ -12,7 +12,7 @@ function getQuestion() {
   let question;
   let correctAnswer;
 
-  // defining each case for the specific operator. Question will be random equation with numbers between 1 & 100.
+  // defining each case for the specific operator. Question will be random equation with numbers between 1 & 20.
   switch (getOperators) {
     case "+":
       correctAnswer = num1 + num2;
